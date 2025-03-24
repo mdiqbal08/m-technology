@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="d/logo.jpg.jpg" alt="Logo" style="width: 120px;">
+        </a>
+        
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('d/front1.jpg.jpg');">
+            <div class="carousel-caption text-center">
+                <h1>MALIK BHAI PVT LTD</h1>
+                <p>First line of text for slide 1.</p>
+                <p>Second line of text for slide 1.</p>
+                <a class="btn btn-primary" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('d/front.jpg.jpeg');">
+            <div class="carousel-caption text-center">
+                <h1>Heading for Slide 2</h1>
+                <p>First line of text for slide 2.</p>
+                <p>Second line of text for slide 2.</p>
+                <a class="btn btn-primary" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('d/front2.jpg.webp');">
+            <div class="carousel-caption text-center">
+                <h1>MOHAMMAD IQBAL </h1>
+                <p>malik technologies pvt ltd.</p>
+                <p>.</p>
+                <a class="btn btn-primary" href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<section class="about-section">
+    <div class="container">
+        <div class="row">
+            <!-- Left side -->
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="company-tab" data-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="aboutTabsContent">
+                    <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                        <h3>Our Company</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a class="btn btn-primary btn-learn-more" href="#">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <h3>Our Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a class="btn btn-primary btn-learn-more" href="#">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a class="btn btn-primary btn-learn-more" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Right side -->
+            <div class="col-lg-6">
+                <img src= 'd/malikbhaid.jpg.jpg' alt="About Us Image">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container my-5">
+    <!-- Services Heading -->
+    <div class="text-center mb-4">
+        <h2>Our Services</h2>
+        <p class="lead">We offer a range of services designed to help you achieve your goals. From consulting to implementation, our team is here to assist you with expertise and dedication.</p>
+    </div>
+
+    <!-- Service Boxes -->
+    <div class="row">
+        <!-- Service Box 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-cogs"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Box 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-lightbulb"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 2</h4>
+                <p>Suspendisse potenti. Praesent ultricies magna sit amet dolor tempus.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Box 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-chart-line"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 3</h4>
+                <p>Nulla facilisi. Fusce vitae nunc non odio fermentum ultrices.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Box 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-users"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 4</h4>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Box 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-briefcase"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 5</h4>
+                <p>Mauris faucibus magna in metus condimentum, nec feugiat ligula facilisis.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Box 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-box">
+                <div class="service-icon mb-3">
+                    <i class="fa fa-bullhorn"></i> <!-- Example icon, change as needed -->
+                </div>
+                <h4>Service 6</h4>
+                <p>Cras eget orci ut dolor elementum luctus eget ac metus.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <!-- Projects Heading -->
+    <div class="text-center mb-4">
+        <h2>Our Projects</h2>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="app-tab" data-toggle="tab" href="#app" role="tab" aria-controls="app" aria-selected="false">App</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="product-branding-tab" data-toggle="tab" href="#product-branding" role="tab" aria-controls="product-branding" aria-selected="false">Product Branding</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="books-tab" data-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="false">Books</a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="projectTabsContent">
+        <!-- All Projects Tab -->
+        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+            <div class="row">
+                <!-- Image 1 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/book.jpg" alt="project 1">
+                        <div class="overlay">
+                            <h5>Project 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/6.jpg.jpg" alt="Project 2">
+                        <div class="overlay">
+                            <h5>Project 2</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/9.jpg.jpg" alt="Project 3">
+                        <div class="overlay">
+                            <h5>Project 3</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Image 4 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/8.jpg.jpg" alt="Project 4">
+                        <div class="overlay">
+                            <h5>Project 4</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/7.jpg.jpg" alt="Project 5">
+                        <div class="overlay">
+                            <h5>Project 5</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="col-md-4 img-container">
+                    <div class="project-image">
+                        <img src="d/6.jpg.jpg" alt="Project 6">
+                        <div class="overlay">
+                            <h5>Project 6</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- App Tab -->
+        <div class="tab-pane fade" id="app" role="tabpanel" aria-labelledby="app-tab">
+            <!-- Content for App projects -->
+            <!-- Similar structure as the All tab -->
+        </div>
+        <!-- Product Branding Tab -->
+        <div class="tab-pane fade" id="product-branding" role="tabpanel" aria-labelledby="product-branding-tab">
+            <!-- Content for Product Branding projects -->
+            <!-- Similar structure as the All tab -->
+        </div>
+        <!-- Books Tab -->
+        <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">
+            <!-- Content for Books projects -->
+            <!-- Similar structure as the All tab -->
+        </div>
+    </div>
+</div>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h2 class="mb-4">Get in Touch</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Map -->
+            <div class="col-md-6">
+                <h2 class="mb-4">Our Location</h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9993347110145!2d2.294481015674179!3d48.858844079287756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcb11f0cfc3%3A0x13d2a7d7b2a29a4!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1606789462260!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5>Our Address</h5>
+            <address>
+              <strong>malik technologies pvt ltd</strong><br>
+               Radhika vihar mansrovar jaipur<br>
+              jaipur, rajsthan, 302020<br>
+              <abbr title="6205040982">P:</abbr> 6205040982<br>
+              <abbr title="malikbhai8294@gmail.com">E:</abbr> <a href="maliktechnologies@.com">maliktechnologies@.com</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      
+      
+</section>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
